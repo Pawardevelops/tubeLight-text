@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    background-color: rgb(27, 46, 88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 3rem;
+    color: rgb(57, 74, 102);
+}
+
+h2{
+    letter-spacing: 5px;
+    border: none;
+    font-weight: 200;
+    text-decoration: none;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004) ;
+    line-height: .65em;
+    outline: none;
+    text-transform: uppercase;
+
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,18%,20%,30%,50%,60%,65%,80%,90%,92%{
+        color: rgb(57, 74, 102);
+        text-shadow: none;
+    }
+
+    18.1%,20.1%,30.1%,50.1%,60.1%,65.1%,80.1%,90.1%,92.1%,100%{
+        color: aliceblue;
+        text-shadow: 0 0 10px rgb(68, 143, 255),
+        0 0 20px rgb(68, 143, 255),
+        0 0 40px rgb(68, 143, 255),
+        0 0 60px rgb(68, 143, 255),
+        0 0 80px rgb(68, 143, 255);
+    }
+    
+}
